@@ -1,0 +1,30 @@
+{
+  "name": "@naporin0624/eslint-config",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "private": false,
+  "files": [
+    "README.md",
+    "index.js",
+    "react.js",
+    "package.json"
+  ],
+  "author": "naporin0624",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^8.18.0",
+    "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.1.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.1.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": "^4.7.4"
+  }
+}
