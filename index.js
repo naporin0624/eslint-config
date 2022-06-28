@@ -43,15 +43,6 @@ module.exports = {
         alphabetize: { order: "asc", caseInsensitive: true },
       },
     ],
-    "prettier/prettier": [
-      "error",
-      {
-        singleQuote: false,
-        semi: true,
-        tabWidth: 2,
-        printWidth: 120
-      },
-    ],
   },
   settings: {
     "import/resolver": {
