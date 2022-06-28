@@ -25,3 +25,7 @@ Use default and react config.
   }
 }
 ```
+
+```
+eslint --cache --fix src && prettier --write src
+```
