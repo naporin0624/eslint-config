@@ -43,6 +43,23 @@ module.exports = {
         alphabetize: { order: "asc", caseInsensitive: true },
       },
     ],
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      { "checksConditionals": false }
+    ],
+    "newline-before-return": "error",
+    "@typescript-eslint/consistent-generic-constructors": [
+      "error",
+      "constructor"
+    ],
+    "@typescript-eslint/array-type": ["error", { "default": "array" }],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "semi": ["error", "always"],
+    "semi-spacing": ["error", { "after": true, "before": false }],
+    "semi-style": ["error", "last"],
+    "no-extra-semi": "error",
+    "no-unexpected-multiline": "error",
+    "no-unreachable": "error"
   },
   settings: {
     "import/resolver": {
