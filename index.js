@@ -24,6 +24,8 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "error",
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-unused-vars": "error",
+    "import/default": "off",
+    "import/no-named-as-default-member": "off",
     "import/order": [
       "error",
       {
