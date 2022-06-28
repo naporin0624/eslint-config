@@ -62,7 +62,7 @@ module.exports = {
     ],
     "no-array-constructor": "off",
     "@typescript-eslint/no-array-constructor": ["error"],
-    "@typescript-eslint/no-unnecessary-boolean-literal-compare": ["error"],,,,
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": ["error"],
     "@typescript-eslint/no-unnecessary-condition": ["error"],
 
     "no-console": "error",
