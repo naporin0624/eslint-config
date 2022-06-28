@@ -51,8 +51,6 @@ module.exports = {
         allowTypedFunctionExpressions: false,
       },
     ],
-    indent: "off",
-    "@typescript-eslint/indent": ["error", 2],
     "lines-between-class-members": "off",
     "@typescript-eslint/lines-between-class-members": [
       "error",
