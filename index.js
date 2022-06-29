@@ -5,7 +5,7 @@ module.exports = {
     project: "tsconfig.json",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint/eslint-plugin", "import", "unused-imports"],
+  plugins: ["@typescript-eslint/eslint-plugin", "import", "unused-imports", "import-access"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -104,6 +104,7 @@ module.exports = {
     "no-extra-semi": "error",
     "no-unexpected-multiline": "error",
     "no-unreachable": "error",
+    "import-access/jsdoc": ["error"],
   },
   settings: {
     "import/resolver": {
