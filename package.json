@@ -1,6 +1,6 @@
 {
   "name": "@naporin0624/eslint-config",
-  "version": "0.0.13",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "private": false,
