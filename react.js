@@ -8,6 +8,8 @@ module.exports = {
     "react/display-name": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
+    "react/jsx-no-bind": "error",
+    "react/jsx-no-leaked-render": "error"
   },
   settings: {
     react: {

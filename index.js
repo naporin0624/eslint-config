@@ -5,13 +5,14 @@ module.exports = {
     project: "tsconfig.json",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint/eslint-plugin", "import", "unused-imports", "import-access"],
+  plugins: ["@typescript-eslint/eslint-plugin", "import", "unused-imports", "import-access", "regexp"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:prettier/recommended",
+    "plugin:regexp/recommended"
   ],
   root: true,
   rules: {
