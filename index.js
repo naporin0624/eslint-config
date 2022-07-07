@@ -17,14 +17,6 @@ module.exports = {
   root: true,
   rules: {
     "@typescript-eslint/interface-name-prefix": "off",
-    "@typescript-eslint/explicit-function-return-type": [
-      "warn",
-      {
-        allowHigherOrderFunctions: true,
-        allowTypedFunctionExpressions: true,
-        allowExpressions: true,
-      },
-    ],
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-var-requires": "error",
@@ -41,15 +33,6 @@ module.exports = {
       "error",
       {
         prefer: "type-imports",
-      },
-    ],
-    "@typescript-eslint/explicit-module-boundary-types": [
-      "error",
-      {
-        allowArgumentsExplicitlyTypedAsAny: false,
-        allowDirectConstAssertionInArrowFunctions: true,
-        allowHigherOrderFunctions: false,
-        allowTypedFunctionExpressions: false,
       },
     ],
     "lines-between-class-members": "off",
