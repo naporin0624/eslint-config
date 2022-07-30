@@ -2,6 +2,21 @@
 
 ## Example
 
+neverthrow を使用しているので install する
+
+https://github.com/supermacro/neverthrow#recommended-use-eslint-plugin-neverthrow
+
+```shell
+npm install neverthrow
+```
+
+
+```json
+{
+  "extends": ["@naporin0624/eslint-config"]
+}
+```
+
 Use default and react config.
 
 ```json
@@ -11,8 +26,4 @@ Use default and react config.
     "react/react-in-jsx-scope": "off"
   }
 }
-```
-
-```
-eslint --cache --fix src && prettier --write src
 ```

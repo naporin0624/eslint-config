@@ -5,14 +5,21 @@ module.exports = {
     project: "tsconfig.json",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint/eslint-plugin", "import", "unused-imports", "import-access", "regexp"],
+  plugins: [
+    "@typescript-eslint/eslint-plugin",
+    "import",
+    "unused-imports",
+    "import-access",
+    "regexp",
+    "neverthrow",
+  ],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:prettier/recommended",
-    "plugin:regexp/recommended"
+    "plugin:regexp/recommended",
   ],
   root: true,
   rules: {
@@ -22,7 +29,6 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "error",
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-unused-vars": "error",
-    "@typescript-eslint/no-misused-promises": "error",
     "@typescript-eslint/consistent-type-exports": [
       "error",
       {
@@ -71,10 +77,6 @@ module.exports = {
         alphabetize: { order: "asc", caseInsensitive: true },
       },
     ],
-    "@typescript-eslint/no-misused-promises": [
-      "error",
-      { checksConditionals: false },
-    ],
     "newline-before-return": "error",
     "@typescript-eslint/consistent-generic-constructors": [
       "error",
@@ -89,6 +91,7 @@ module.exports = {
     "no-unexpected-multiline": "error",
     "no-unreachable": "error",
     "import-access/jsdoc": ["error"],
+    "neverthrow/must-use-result": "error",
   },
   settings: {
     "import/resolver": {
