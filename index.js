@@ -18,8 +18,8 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "plugin:prettier/recommended",
     "plugin:regexp/recommended",
+    "prettier"
   ],
   root: true,
   rules: {
