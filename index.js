@@ -15,11 +15,12 @@ module.exports = {
   ],
   extends: [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
+    "standard",
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:regexp/recommended",
-    "prettier"
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
   ],
   root: true,
   rules: {
@@ -63,26 +64,14 @@ module.exports = {
     "import/order": [
       "error",
       {
-        groups: [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "object",
-          "type",
-        ],
+        groups: ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
         "newlines-between": "always",
         pathGroupsExcludedImportTypes: ["builtin"],
         alphabetize: { order: "asc", caseInsensitive: true },
       },
     ],
     "newline-before-return": "error",
-    "@typescript-eslint/consistent-generic-constructors": [
-      "error",
-      "constructor",
-    ],
+    "@typescript-eslint/consistent-generic-constructors": ["error", "constructor"],
     "@typescript-eslint/array-type": ["error", { default: "array" }],
     "comma-spacing": ["error", { before: false, after: true }],
     semi: ["error", "always"],

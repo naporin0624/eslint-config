@@ -11,6 +11,7 @@ npm install neverthrow
 ```
 
 `.eslintrc.json`
+
 ```json
 {
   "extends": ["@naporin0624/eslint-config"]
@@ -18,6 +19,7 @@ npm install neverthrow
 ```
 
 `package.json`
+
 ```json
 "fmt:prettier": "prettier --write src",
 "fmt:eslint": "eslint --cache --ext .ts,.tsx --fix src",
@@ -27,6 +29,7 @@ npm install neverthrow
 ### Use default and react config.
 
 `.eslintrc.json`
+
 ```json
 {
   "extends": ["@naporin0624/eslint-config", "@naporin0624/eslint-config/react"],

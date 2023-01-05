@@ -1,5 +1,9 @@
 module.exports = {
-  extends: ["plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:jsx-a11y/recommended"],
+  extends: [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+  ],
   rules: {
     "react/prop-types": "off",
     "react/display-name": "off",
@@ -7,8 +11,7 @@ module.exports = {
     "react-hooks/exhaustive-deps": "error",
     "react/jsx-no-bind": "error",
     "react/jsx-no-leaked-render": "error",
-    "react/jsx-key": ["error", { "checkFragmentShorthand": false }],
-    
+    "react/jsx-key": ["error", { checkFragmentShorthand: false }],
   },
   settings: {
     react: {
