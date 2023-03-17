@@ -1,8 +1,10 @@
 {
   "name": "@naporin0624/eslint-config",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "eslint-config that @naporin0624 usually uses in his applications.",
-  "keywords": ["eslint"],
+  "keywords": [
+    "eslint"
+  ],
   "main": "lib/index.js",
   "private": false,
   "files": [
