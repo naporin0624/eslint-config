@@ -87,6 +87,8 @@ const config = {
           "**/*.test.ts",
           "**/*.test.tsx",
           "./*.config.js",
+          "./*.config.cjs",
+          "./*.config.mjs",
           "./*.config.ts",
           "**/*.stories.tsx",
           "**/*.story.tsx",
