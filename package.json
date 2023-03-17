@@ -1,12 +1,14 @@
 {
   "name": "@naporin0624/eslint-config",
   "version": "0.8.0",
-  "description": "",
+  "description": "eslint-config that @naporin0624 usually uses in his applications.",
+  "keywords": ["eslint"],
   "main": "lib/index.js",
   "private": false,
   "files": [
+    "index.js",
+    "react.js",
     "README.md",
-    "src",
     "package.json"
   ],
   "author": "naporin0624",
