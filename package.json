@@ -25,7 +25,8 @@
     "lint:prettier": "prettier --check .",
     "fmt": "npm-run-all -s 'fmt:*'",
     "fmt:eslint": "eslint -c ./index.js . --fix",
-    "fmt:prettier": "prettier --write ."
+    "fmt:prettier": "prettier --write .",
+    "publish": "changeset publish"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0",
