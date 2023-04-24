@@ -1,8 +1,9 @@
 name: publish
 
 on:
-  release:
-    types: ["created"]
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -16,6 +17,8 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - run: npm i
       - run: npm run --if-present build
-      - run: npm publish --access=public
+      - run: |
+          npx changeset version
+          npx changeset publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
