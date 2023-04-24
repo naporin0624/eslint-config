@@ -6,6 +6,8 @@ on:
       - main
   workflow_dispatch:
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,10 +17,19 @@ jobs:
         with:
           node-version: 16
           registry-url: "https://registry.npmjs.org"
-      - run: npm i
+
+      - name: install dependencies
+        run: npm i
+
       - run: npm run --if-present build
-      - run: |
+
+      - name: publish
+        run: |
           npx changeset version
-          npx changeset publish
+          npx changeset publish --opt ${{ secrets.NPM_TOKEN }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: push
+        run: git push --follow-tags
+        shell: bash
