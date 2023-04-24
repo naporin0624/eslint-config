@@ -1,9 +1,12 @@
 name: publish
 
 on:
-  release:
-    types: ["created"]
+  push:
+    branches:
+      - main
   workflow_dispatch:
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   build:
@@ -14,8 +17,19 @@ jobs:
         with:
           node-version: 16
           registry-url: "https://registry.npmjs.org"
-      - run: npm i
+
+      - name: install dependencies
+        run: npm i
+
       - run: npm run --if-present build
-      - run: npm publish --access=public
+
+      - name: publish
+        run: |
+          npx changeset version
+          npx changeset publish --opt ${{ secrets.NPM_TOKEN }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: push
+        run: git push --follow-tags
+        shell: bash
