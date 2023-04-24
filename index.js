@@ -6,7 +6,7 @@ const config = {
     project: "tsconfig.json",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint/eslint-plugin", "import", "unused-imports", "import-access", "regexp", "neverthrow"],
+  plugins: ["@typescript-eslint/eslint-plugin", "import", "unused-imports", "import-access", "regexp", "neverthrow", "unicorn"],
   extends: [
     "eslint:recommended",
     "standard",
@@ -87,15 +87,20 @@ const config = {
           "**/*.test.ts",
           "**/*.test.tsx",
           "./*.config.js",
+          "./*.config.dev.js",
           "./*.config.cjs",
+          "./*.config.dev.cjs",
           "./*.config.mjs",
+          "./*.config.dev.mjs",
           "./*.config.ts",
+          "./*.config.dev.ts",
           "**/*.stories.tsx",
           "**/*.story.tsx",
           "vitest-*",
         ],
       },
     ],
+    "unicorn/prefer-node-protocol": "error"
   },
   overrides: [
     {
