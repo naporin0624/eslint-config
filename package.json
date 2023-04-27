@@ -23,6 +23,7 @@
     "lint": "npm-run-all -s 'lint:*'",
     "lint:eslint": "eslint  .",
     "lint:prettier": "prettier --check .",
+    "lint:conflict": "eslint-config-prettier ./index.js",
     "fmt": "npm-run-all -s 'fmt:*'",
     "fmt:eslint": "eslint . --fix",
     "fmt:prettier": "prettier --write .",
