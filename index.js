@@ -6,7 +6,15 @@ const config = {
     project: "tsconfig.json",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint/eslint-plugin", "import", "unused-imports", "import-access", "regexp", "neverthrow", "unicorn"],
+  plugins: [
+    "@typescript-eslint/eslint-plugin",
+    "import",
+    "unused-imports",
+    "import-access",
+    "regexp",
+    "neverthrow",
+    "unicorn",
+  ],
   extends: [
     "eslint:recommended",
     "standard",
@@ -67,12 +75,6 @@ const config = {
     "newline-before-return": "error",
     "@typescript-eslint/consistent-generic-constructors": ["error", "constructor"],
     "@typescript-eslint/array-type": ["error", { default: "array" }],
-    "comma-spacing": ["error", { before: false, after: true }],
-    semi: ["error", "always"],
-    "semi-spacing": ["error", { after: true, before: false }],
-    "semi-style": ["error", "last"],
-    "no-extra-semi": "error",
-    "no-unexpected-multiline": "error",
     "no-unreachable": "error",
     "import-access/jsdoc": ["error"],
     "neverthrow/must-use-result": "error",
@@ -100,7 +102,7 @@ const config = {
         ],
       },
     ],
-    "unicorn/prefer-node-protocol": "error"
+    "unicorn/prefer-node-protocol": "error",
   },
   overrides: [
     {
