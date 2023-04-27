@@ -1,5 +1,11 @@
 # @naporin0624/eslint-config
 
+## 0.10.0
+
+### Minor Changes
+
+- 37aafd5: update eslint config & eslint-config dependencies
+
 ## 0.9.0
 
 ### Minor Changes
