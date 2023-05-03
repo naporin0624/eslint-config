@@ -26,11 +26,19 @@ const config = {
   ],
   root: true,
   rules: {
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-var-requires": "error",
-    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-floating-promises": "error",
+    "@typescript-eslint/no-array-constructor": "error",
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/strict-boolean-expressions": "error",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
+    "@typescript-eslint/consistent-generic-constructors": ["error", "constructor"],
+    "@typescript-eslint/array-type": ["error", { default: "array" }],
     "@typescript-eslint/consistent-type-exports": [
       "error",
       {
@@ -43,23 +51,17 @@ const config = {
         prefer: "type-imports",
       },
     ],
-    "lines-between-class-members": "off",
     "@typescript-eslint/lines-between-class-members": [
       "error",
       {
         exceptAfterOverload: true,
       },
     ],
+
+    "lines-between-class-members": "off",
     "no-array-constructor": "off",
-    "@typescript-eslint/no-array-constructor": ["error"],
-    "@typescript-eslint/no-unnecessary-boolean-literal-compare": ["error"],
-    "@typescript-eslint/no-unnecessary-condition": ["error"],
-    "@typescript-eslint/no-floating-promises": ["error"],
     "no-console": "error",
-
-    "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports-ts": "warn",
-
     "import/default": "off",
     "import/no-named-as-default-member": "off",
     "import/order": [
@@ -73,8 +75,7 @@ const config = {
       },
     ],
     "newline-before-return": "error",
-    "@typescript-eslint/consistent-generic-constructors": ["error", "constructor"],
-    "@typescript-eslint/array-type": ["error", { default: "array" }],
+
     "no-unreachable": "error",
     "import-access/jsdoc": ["error"],
     "neverthrow/must-use-result": "error",
@@ -117,6 +118,13 @@ const config = {
       rules: {
         "no-console": "off",
         "neverthrow/must-use-result": "off",
+      },
+    },
+    {
+      files: ["**/*.d.ts"],
+      rules: {
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/consistent-type-imports": "off",
       },
     },
   ],
