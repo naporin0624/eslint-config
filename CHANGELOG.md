@@ -1,5 +1,11 @@
 # @naporin0624/eslint-config
 
+## 0.11.0
+
+### Minor Changes
+
+- 94f5e2f: add strict-boolean-expressions
+
 ## 0.10.0
 
 ### Minor Changes
