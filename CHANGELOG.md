@@ -1,5 +1,11 @@
 # @naporin0624/eslint-config
 
+## 0.12.0
+
+### Minor Changes
+
+- b3f2d1b: upgrade pacakges
+
 ## 0.11.0
 
 ### Minor Changes
