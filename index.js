@@ -14,6 +14,7 @@ const config = {
     "regexp",
     "neverthrow",
     "unicorn",
+    "deprecation",
   ],
   extends: [
     "eslint:recommended",
@@ -26,7 +27,15 @@ const config = {
   ],
   root: true,
   rules: {
-    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+        caughtErrorsIgnorePattern: "^_",
+        destructuredArrayIgnorePattern: "^_",
+      },
+    ],
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -98,6 +107,15 @@ const config = {
       },
     ],
     "unicorn/prefer-node-protocol": "error",
+    camelcase: [
+      "error",
+      {
+        ignoreImports: true,
+        properties: "never",
+        allow: [],
+      },
+    ],
+    "deprecation/deprecation": "warn",
   },
   overrides: [
     {
@@ -112,6 +130,7 @@ const config = {
       rules: {
         "no-console": "off",
         "neverthrow/must-use-result": "off",
+        "import/no-extraneous-dependencies": "off",
       },
     },
     {
