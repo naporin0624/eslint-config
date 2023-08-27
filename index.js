@@ -51,12 +51,6 @@ const config = {
         prefer: "type-imports",
       },
     ],
-    "@typescript-eslint/lines-between-class-members": [
-      "error",
-      {
-        exceptAfterOverload: true,
-      },
-    ],
 
     "lines-between-class-members": "off",
     "no-array-constructor": "off",
