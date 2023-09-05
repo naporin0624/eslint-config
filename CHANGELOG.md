@@ -1,5 +1,11 @@
 # @naporin0624/eslint-config
 
+## 0.13.1
+
+### Patch Changes
+
+- ee462f6: update eslint typescript parser version
+
 ## 0.13.0
 
 ### Minor Changes
