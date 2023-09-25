@@ -27,7 +27,7 @@
     "fmt": "npm-run-all -s 'fmt:*'",
     "fmt:eslint": "eslint . --fix",
     "fmt:prettier": "prettier --write .",
-    "publish": "changeset publish"
+    "release": "changeset publish"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0",
@@ -35,16 +35,16 @@
     "typescript": ">=4.7.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.6.0",
-    "@typescript-eslint/parser": "^6.6.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.1.0",
-    "eslint-import-resolver-typescript": "^3.6.0",
-    "eslint-plugin-deprecation": "^1.5.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-deprecation": "^2.0.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-import-access": "^2.1.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-n": "^16.0.2",
+    "eslint-plugin-n": "^16.1.0",
     "eslint-plugin-neverthrow": "^1.1.4",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
@@ -55,10 +55,10 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
-    "@tsconfig/recommended": "^1.0.2",
-    "@types/eslint": "^8.44.2",
+    "@tsconfig/recommended": "^1.0.3",
+    "@types/eslint": "^8.44.3",
     "@types/prettier": "^2.7.3",
-    "eslint": "^8.48.0",
+    "eslint": "^8.50.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
