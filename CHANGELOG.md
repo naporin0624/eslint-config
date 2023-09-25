@@ -1,5 +1,11 @@
 # @naporin0624/eslint-config
 
+## 0.14.0
+
+### Minor Changes
+
+- 5144d75: upgrade dependencies
+
 ## 0.13.1
 
 ### Patch Changes
