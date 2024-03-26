@@ -1,6 +1,6 @@
 {
   "name": "@naporin0624/eslint-config",
-  "version": "0.14.1",
+  "version": "0.14.2",
   "description": "eslint-config that @naporin0624 usually uses in his applications.",
   "keywords": [
     "eslint"
