@@ -1,5 +1,11 @@
 # @naporin0624/eslint-config
 
+## 0.14.2
+
+### Patch Changes
+
+- dd03f1d: add @typescript-eslint/typescript-estree
+
 ## 0.14.1
 
 ### Patch Changes
