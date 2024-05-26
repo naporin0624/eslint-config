@@ -1,5 +1,11 @@
 # @naporin0624/eslint-config
 
+## 0.15.0-next.0
+
+### Minor Changes
+
+- e975c71: migrate flatconfig
+
 ## 0.14.2
 
 ### Patch Changes

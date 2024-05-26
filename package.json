@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@naporin0624/eslint-config",
-  "version": "0.14.2",
+  "version": "0.15.0-next.0",
   "description": "eslint-config that @naporin0624 usually uses in his applications.",
   "keywords": [
     "eslint"
