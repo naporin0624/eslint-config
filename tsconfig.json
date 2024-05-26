@@ -2,8 +2,7 @@
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
-    "allowJs": true,
-    "types": ["vitest/globals"]
+    "allowJs": true
   },
   "include": ["*.js", "*.ts", "*.cjs", "*.mjs", "react", "typescript"]
 }
