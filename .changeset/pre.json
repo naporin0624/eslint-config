@@ -1,0 +1,8 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "@naporin0624/eslint-config": "0.14.2"
+  },
+  "changesets": ["tidy-paws-share"]
+}
