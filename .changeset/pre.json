@@ -4,5 +4,7 @@
   "initialVersions": {
     "@naporin0624/eslint-config": "0.14.2"
   },
-  "changesets": ["tidy-paws-share"]
+  "changesets": [
+    "tidy-paws-share"
+  ]
 }
